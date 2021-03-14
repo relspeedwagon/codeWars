@@ -189,5 +189,91 @@ let items = []
 items.push({a: "b", c: "d"})
 //Short Long Short
 let solution = (a, b) => a.toString().length < b.toString().length ? a+b+a : b+a+b;
+//Exclusive "or" (xor) Logical Operator
+function xor(a, b) {
+  return a ^ b ? true : false;
+}
 
+//Two to One
+function longest(s1, s2) {
+  let combinedString = s1+s2
+  let arr = combinedString.split('')
+  let sortArr = arr.sort()
+  let newArr = []
+  sortArr.forEach( (x) => {
+    if (!newArr.includes(x)) {
+      newArr.push(x);
+    }
+  })
+  return newArr.join('')
+}
+//Training JS #8: Conditional statement--switch
+function howManydays(month){
+  let days = 31
+  switch (month){
+    case 2:
+      days = 28;
+      break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      days = 30;
+      break;
+  }
+  return days;
+}
+//Are arrow functions odd?
+function odds(values){
+  return values.filter( i => i % 2);
+}
+//Grasshopper - Basic Function Fixer
+function addFive(num) {
+  var total = num + 5
+  return total
+}
+//Invert values
+function invert(array) {
+  return array.map(i => -i)
+}
+//NBA full 48 minutes average
+function pointsPer48(ppg, mpg) {
+  return mpg == 0 ? 0 : Math.round( ((ppg / mpg) * 48) * 10 ) / 10
+}
+//Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+  return bool == true ? 'Yes' : 'No';
+}
+//Plural
+function plural(n) {
+  return n == 1 ? false : true;
+}
+//Evens and Odds
+function evensAndOdds(num){
+  num = Math.abs(num)
+  if(num % 2 === 0){
+    return num.toString(2)
+  }else{
+    return num.toString(16)
+  }
+}
+//Incorrect division method
+const solve = (x, y) => x / y
+//Do I get a bonus?
+function bonusTime(salary, bonus) {
+  if(bonus == true){
+    salary = salary * 10
+    } return "£" + salary.toString()
+  }
+//Kata Example Twist
+var websites = []
 
+while(websites.length < 1000){
+  websites.push('codewars')
+}
+//Is he gonna survive?
+function hero(bullets, dragons){
+  return bullets >= dragons * 2 ? true : false;
+  }
+//Convert a Number to a String!
+numberToString = (num) => num.toString()
