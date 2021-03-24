@@ -277,3 +277,146 @@ function hero(bullets, dragons){
   }
 //Convert a Number to a String!
 numberToString = (num) => num.toString()
+
+//Find the Remainder
+function remainder(a, b){
+  return a > b ? a%b : b%a
+  
+}
+
+//Function 3 - multiplying two numbers
+let multiply = (a, b) => a*b
+
+//Return Negative
+function makeNegative(num) {
+  if(num > 0){
+    return (0 - num)
+  } else {return num
+  } 
+}
+function makeNegative2(num) {
+  return num < 0 ? num : -num;
+}
+
+//Get the mean of an array
+function getAverage(marks){
+  return Math.floor(marks.reduce((a, b) => a + b) / marks.length)
+}
+
+//Semi-Optional
+function wrap(value) {
+  let wrappedObj = {};
+  wrappedObj.value = value
+  return wrappedObj
+}
+
+//Shifty Closures
+function greet_abe() {
+  let name = 'Abe';
+  return 'Hello, ' + name + '!';
+};
+
+function greet_ben() {
+  let name = 'Ben';
+  return 'Hello, ' + name + '!';
+};
+
+//Basic variable assignment
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+//Function 2 - squaring an argument
+const square = n => n*n
+
+//How much coffee do you need?
+function howMuchCoffee(events) {
+  const coffees = events.map(i => i.match(/other/g) ? 0
+                             : i.match(/OTHER/g) ? 0
+                             : i == i.toUpperCase()? 2 
+                             : i == i.toLowerCase()? 1
+                             : 0);
+
+  const total = coffees.reduce((acc, cV) => {
+    return acc + cV;
+  }, 0);
+  return (total > 3 ? 'You need extra sleep' : total);
+}
+
+//My head is at the wrong end!
+function fixTheMeerkat(arr) {
+  return arr.reverse()
+}
+
+//Function 1 - hello world
+let greet = () => "hello world!"
+
+//How many lightsabers do you own?
+function howManyLightsabersDoYouOwn(name) {
+  return name === "Zach" ? 18 : 0;
+}
+
+//Reversed Words
+function reverseWords(str){
+  return str.split(' ').reverse().join(' ')
+}
+
+//Basic Training: Add item to an Array
+websites.push('codewars')
+
+//Get Planet Name By ID
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+      break;
+    case 2:
+      name = 'Venus'
+      break;
+    case 3:
+      name = 'Earth'
+      break;
+    case 4:
+      name = 'Mars'
+      break;
+    case 5:
+      name = 'Jupiter'
+      break;
+    case 6:
+      name = 'Saturn'
+      break;
+    case 7:
+      name = 'Uranus'
+      break;
+    case 8:
+      name = 'Neptune'
+  }
+  
+  return name;
+}
+
+//Reversed Strings
+function solution(str){
+  return str.split('').reverse().join('')
+}
+
+//Remove String Spaces
+function noSpace(x){
+  return x.split(' ').join('')
+}
+
+//Return to Sanity
+function mystery() {
+  var results =
+    {sanity: 'Hello'};
+  return results;
+}
+
+//Opposite number
+function opposite(number) {
+  return -number;
+}
+
+
+
