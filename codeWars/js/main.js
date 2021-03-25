@@ -1,3 +1,47 @@
+//Coding Meetup #11 - Higher-Order Functions Series - Find the average age
+function getAverageAge(list) {
+  let ages = []
+  list.forEach(i => ages.push(i.age));
+  
+  return Math.round(ages.reduce((ac, cv) => ac + cv) / ages.length);
+  
+}
+//function getAverageAge(list) {
+//   return Math.round(list.reduce((sum,obj) => sum + obj.age, 0) / list.length);
+// }
+
+//Welcome!
+function greet(language) {
+  const greetDatabase = {
+    english: 'Welcome',
+    czech: 'Vitejte',
+    danish: 'Velkomst',
+    dutch: 'Welkom',
+    estonian: 'Tere tulemast',
+    finnish: 'Tervetuloa',
+    flemish: 'Welgekomen',
+    french: 'Bienvenue',
+    german: 'Willkommen',
+    irish: 'Failte',
+    italian: 'Benvenuto',
+    latvian: 'Gaidits',
+    lithuanian: 'Laukiamas',
+    polish: 'Witamy',
+    spanish: 'Bienvenido',
+    swedish: 'Valkommen',
+    welsh: 'Croeso'
+  }
+
+  const greeting = greetDatabase[language];
+  return greeting || greetDatabase.english;
+}
+
+//Alan Partridge II - Apple Turnover
+apple = x => Number(x*x) > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox.";
+
+//You Can't Code Under Pressure #1
+doubleInteger = i => i * 2;
+
 //Squash the bugs
 function findLongest(str) {
     
