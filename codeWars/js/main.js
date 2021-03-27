@@ -462,5 +462,42 @@ function opposite(number) {
   return -number;
 }
 
+//Remove First and Last Character
+function removeChar(str){
+  return str.slice(1, -1)
+ 
+ };
 
+//Even or Odd
+function even_or_odd(number) {
+  return number % 2===0 ? "Even" : "Odd";
+}
 
+//String repeat
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
+//Mr. Freeze
+Object.freeze(MrFreeze)
+
+//Parse nice int from char problem
+function getAge(inputString){
+  return Number(inputString.charAt(0))
+  }
+
+//get character from ASCII Value
+function getChar(c){
+  return String.fromCharCode(c)
+}
+
+//Difference of Volumes of Cuboids
+function findDifference(a, b) {
+  return Math.abs((a[0]*a[1]*a[2])-(b[0]*b[1]*b[2]))
+}
+
+//Get decimal part of the given number
+function getDecimal(n){
+  n = Math.abs(n);
+  return n - Math.floor(n);
+}
