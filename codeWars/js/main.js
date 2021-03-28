@@ -501,3 +501,65 @@ function getDecimal(n){
   n = Math.abs(n);
   return n - Math.floor(n);
 }
+
+//L1: Bartender, drinks!
+function getDrinkByProfession(param){
+  return param.toLowerCase() === "jabroni" ? "Patron Tequila"
+  : param.toLowerCase() == "school counselor" ? "Anything with Alcohol"
+  : param.toLowerCase() == "programmer" ? "Hipster Craft Beer"
+  : param.toLowerCase() == "bike gang member" ? "Moonshine"
+  : param.toLowerCase() == "politician" ? "Your tax dollars"
+  : param.toLowerCase() == "rapper" ? "Cristal"
+  : "Beer";
+}
+
+//Convert a Boolean to a String
+function booleanToString(b){
+  return b.toString()
+}
+
+//Super Duper Easy
+function problem(x){
+  return (typeof x === "string") ? "Error" : (x * 50) + 6;
+}
+
+//Quarter of the year
+const quarterOf = (month) => {
+  return month <= 3 ? 1 
+  : month <= 6 ? 2
+  : month <= 9 ? 3
+  : 4;
+}
+
+//Grasshopper - Grade book
+function getGrade (s1, s2, s3) {
+  let grade = (s1 + s2 + s3) / 3;
+  if (grade >= 90){return 'A'}
+  else if (grade >= 80){return 'B'}
+  else if (grade >= 70){return 'C'}
+  else if (grade >= 60){return 'D'}
+  else{return 'F'}
+}
+
+//Square(n) Sum
+function squareSum(numbers){
+  return numbers.reduce( (ac, cv) => (ac = Math.pow(cv, 2) + ac), 0);
+
+}
+
+//Training JS #14: Methods of Number object--toString() and toLocaleString()
+function colorOf(r,g,b){
+  var r = r.toString(16)
+  var g = g.toString(16) 
+  var b = b.toString(16)
+  r = r.length == 1 ? "0"+ r : r;
+  g = g.length == 1 ? "0" + g : g;
+  b = b.length == 1 ? "0" + b : b;
+  
+  return "#" + r + g + b
+}
+
+//Sum of positive
+function positiveSum(arr) {
+  return arr.reduce( ((a, cV) => cV > 0 ? cV + a : a), 0)
+}
