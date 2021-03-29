@@ -1,3 +1,37 @@
+//Grasshopper - Object syntax debug
+var rooms = {
+  first: {
+    description: 'This is the first room',
+    
+    items: {
+      chair: 'The old chair looks comfortable',
+      lamp: 'This lamp looks ancient'
+      }
+  },
+    
+  second: {
+    description: 'This is the second room',
+    
+    items: {
+      couch: 'This couch looks like it would hurt your back',
+      table: 'On the table there is an unopened bottle of water'
+    }
+  }
+}
+
+//Template Strings
+TempleStrings = (obj, feature) => `${obj} are ${feature}`
+
+//Training JS #15: Methods of Number object--toFixed(), toExponential() and toPrecision()
+
+function howManySmaller(arr,n){
+  let round = arr.map(e => +e.toFixed(2))
+  let count = 0
+  round.forEach(e => e < n ? count++ : count)
+  return count;
+  
+}
+
 //Coding Meetup #11 - Higher-Order Functions Series - Find the average age
 function getAverageAge(list) {
   let ages = []
