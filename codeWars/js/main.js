@@ -1,3 +1,6 @@
+//Number toString
+var a = (123).toString()
+
 //Grasshopper - Object syntax debug
 var rooms = {
   first: {
