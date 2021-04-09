@@ -1,16 +1,4 @@
-//Number toString
-var a = (123).toString()
 
-//Grasshopper - Object syntax debug
-var rooms = {
-  first: {
-    description: 'This is the first room',
-    
-    items: {
-      chair: 'The old chair looks comfortable',
-      lamp: 'This lamp looks ancient'
-      }
-  },
 //Number toString
 var a = (123).toString()
 
