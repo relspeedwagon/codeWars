@@ -1,3 +1,5 @@
+//Thinkful - Logic Drills: Traffic light
+updateLight = (current) => current == 'green' ? 'yellow' : current == 'yellow' ? 'red' : 'green';
 
 //Number toString
 var a = (123).toString()
