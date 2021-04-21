@@ -1,3 +1,6 @@
+//Simple Comparison?
+const add = (a, b) => a == b ? true : false;
+
 //Thinkful - Logic Drills: Traffic light
 updateLight = (current) => current == 'green' ? 'yellow' : current == 'yellow' ? 'red' : 'green';
 
