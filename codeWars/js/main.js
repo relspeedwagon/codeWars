@@ -1,3 +1,6 @@
+//Name Shuffler
+const nameShuffler = str => str.split(' ').reverse().join(' ')
+
 //Simple Comparison?
 const add = (a, b) => a == b ? true : false;
 
