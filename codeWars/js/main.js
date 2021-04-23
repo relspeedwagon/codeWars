@@ -1,3 +1,5 @@
+// other string kata
+
 //Name Shuffler
 const nameShuffler = str => str.split(' ').reverse().join(' ')
 
