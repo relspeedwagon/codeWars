@@ -1,4 +1,8 @@
-// other string kata
+// Remove First and Last Character Part Two
+function array(arr){
+  let fix = arr.split(',').slice(1, -1).join(' ')
+  return fix == false ? null : fix;
+}
 
 //Name Shuffler
 const nameShuffler = str => str.split(' ').reverse().join(' ')
