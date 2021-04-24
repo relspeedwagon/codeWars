@@ -1,3 +1,6 @@
+//Convert a String to a Number!
+let stringToNumber = (str) => Number(str);
+
 // Remove First and Last Character Part Two
 function array(arr){
   let fix = arr.split(',').slice(1, -1).join(' ')
