@@ -1,3 +1,5 @@
+//validate code with simple regex
+validateCode = (code) => Number(code.toString()[0]) <= 3 ? true : false;
 //Convert a String to a Number!
 let stringToNumber = (str) => Number(str);
 
