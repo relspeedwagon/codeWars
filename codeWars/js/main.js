@@ -1,3 +1,9 @@
+//Highest and Lowest
+function highAndLow(numbers){
+  let sortedNums = numbers.split(' ').sort((a,b) => a-b)
+  return `${sortedNums[sortedNums.length -1]} ${sortedNums[0]}`
+}
+
 //validate code with simple regex
 validateCode = (code) => Number(code.toString()[0]) <= 3 ? true : false;
 //Convert a String to a Number!
