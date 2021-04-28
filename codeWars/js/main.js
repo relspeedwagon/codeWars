@@ -1,4 +1,4 @@
-//Highest and Lowest
+//Highest and Lowest!
 function highAndLow(numbers){
   let sortedNums = numbers.split(' ').sort((a,b) => a-b)
   return `${sortedNums[sortedNums.length -1]} ${sortedNums[0]}`
