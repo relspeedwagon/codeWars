@@ -1,3 +1,16 @@
+//Abbreviate a Two Word Name
+const abbrevName = name =>{
+  let first = name.toUpperCase().split(" ")[0][0]
+  let last = name.toUpperCase().split(" ")[1][0]
+  return `${first}.${last}`
+}
+
+// function abbrevName(name){
+
+//   var nameArray = name.split(" ");
+//   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+// }
+
 //Highest and Lowest!
 function highAndLow(numbers){
   let sortedNums = numbers.split(' ').sort((a,b) => a-b)
