@@ -1,3 +1,25 @@
+//Fake Binary
+const fakeBin = (x) => x.split('').map(e => e < 5 ? 0 : 1).join('')
+
+//Sum Mixed Array
+const sumMix = (x) => x.map(Number).reduce((acc, cv)=> acc + cv)
+
+//You only need one - Beginner
+let check = (a, x) => a.includes(x)
+
+//Sort and Star
+let twoSort =  s => s.sort(s.map(e => e.charCodeAt(0)))[0].split('').join('***')
+
+//Convert number to reversed array of digits
+function digitize(n) {
+  let newDigArr = []
+  n.toString().split("").reverse().forEach(e => newDigArr.push(Number(e)))
+  return newDigArr
+}
+
+//pick a set of first elements
+const first = (arr, n)=> { return n == 0 ? arr = [] : arr.slice(0, n || 1) }
+
 //Abbreviate a Two Word Name
 const abbrevName = name =>{
   let first = name.toUpperCase().split(" ")[0][0]
@@ -5,8 +27,20 @@ const abbrevName = name =>{
   return `${first}.${last}`
 }
 
-// function abbrevName(name){
+//better solution for ref:
+// function first(arr, n) {
+//   return n === undefined ? arr.slice(0, 1) : arr.slice(0, n);
+// }
 
+//Abbreviate a Two Word Name
+const abbrevName = name =>{
+  let first = name.toUpperCase().split(" ")[0][0]
+  let last = name.toUpperCase().split(" ")[1][0]
+  return `${first}.${last}`
+}
+
+//better solution for ref
+// function abbrevName(name){
 //   var nameArray = name.split(" ");
 //   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
 // }
