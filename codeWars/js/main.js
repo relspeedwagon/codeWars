@@ -1,3 +1,6 @@
+//Find numbers which are divisible by given number
+const divisibleBy = (numbers, divisor) => numbers.filter(e => e % divisor == 0);
+
 //Fake Binary
 const fakeBin = (x) => x.split('').map(e => e < 5 ? 0 : 1).join('')
 
