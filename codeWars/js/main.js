@@ -1,3 +1,6 @@
+//Convert a string to an array
+const stringToArray = string => string.split(" ")
+
 //Sort arrays - 1
 const sortme = ( names ) => names.sort()
 
