@@ -9,6 +9,12 @@ const getEvenNumbers = (numbersArray) => numbersArray.filter( e => e % 2 == 0 )
 //Small enough? - Beginner
 const smallEnough = (a, limit) => a.every(e=> e <= limit)
 
+//A Needle in the Haystack
+function findNeedle(haystack) {
+  let found = haystack.find((needle)=> needle === 'needle')
+  return `found the needle at position ${haystack.indexOf(found)}` 
+}
+
 
 //Questions to practice: 
 //One: Given a non-empty array of integers, return the result of multiplying the values together in order. Example: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24 
