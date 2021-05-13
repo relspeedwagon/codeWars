@@ -1,4 +1,12 @@
-//Questions to practice: One: Given a non-empty array of integers, return the result of multiplying the values together in order. Example: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24 
+//JavaScript Array Filter
+const getEvenNumbers = (numbersArray) => numbersArray.filter( e => e % 2 == 0 )
+
+//Small enough? - Beginner
+const smallEnough = (a, limit) => a.every(e=> e <= limit)
+
+
+//Questions to practice: 
+//One: Given a non-empty array of integers, return the result of multiplying the values together in order. Example: [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24 
 const multAllValues = arr => arr.reduce((acc, cv) => acc * cv )
 
 //Two: You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed 'age' of 0. Return a new array with [youngest age, oldest age, difference between the youngest and oldest age]. 
