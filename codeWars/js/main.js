@@ -1,3 +1,8 @@
+//Array plus array
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((a, cv)=> a + cv)
+}
+
 //JavaScript Array Filter
 const getEvenNumbers = (numbersArray) => numbersArray.filter( e => e % 2 == 0 )
 
