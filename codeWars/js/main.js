@@ -1,3 +1,19 @@
+//Find the first non-consecutive number
+//got close but couldn't crack! these are solutions:
+firstNonConsecutive = arr => arr.length == 1 ? null : arr[0] + 1 != arr[1] ? arr[1] : firstNonConsecutive(arr.slice(1)) 
+
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length - 1; ++i) {
+    if (arr[i] + 1 !== arr[i + 1]) {
+      return arr[i + 1]
+    }
+  }
+  return null
+}
+
+//Counting sheep...
+const countSheeps = (arrayOfSheep) => arrayOfSheep.filter((e)=>e === true).length
+
 //Array plus array
 function arrayPlusArray(arr1, arr2) {
   return arr1.concat(arr2).reduce((a, cv)=> a + cv)
