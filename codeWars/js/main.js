@@ -1,3 +1,14 @@
+//Swap Values
+function swapValues() {
+  return arguments[0].reverse();
+}
+
+function swapValues(args) {
+  var temp = args[0];
+  args[0] = args[1];
+  args[1] = temp;
+}
+
 //Find the first non-consecutive number
 //got close but couldn't crack! these are solutions:
 firstNonConsecutive = arr => arr.length == 1 ? null : arr[0] + 1 != arr[1] ? arr[1] : firstNonConsecutive(arr.slice(1)) 
