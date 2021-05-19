@@ -1,3 +1,17 @@
+//Find the Difference in Age between Oldest and Youngest Family Members
+function differenceInAges(ages){
+  let youngToOld = ages.sort((a, b) => a-b)
+  let diff = youngToOld[youngToOld.length-1] - youngToOld[0]
+  return [ youngToOld[0], youngToOld[youngToOld.length-1], diff ]
+}
+
+function differenceInAges(ages){
+  const min = Math.min(...ages);
+  const max = Math.max(...ages);
+  
+  return [min, max, max-min];
+}
+
 //Swap Values
 function swapValues() {
   return arguments[0].reverse();
@@ -49,7 +63,7 @@ const multAllValues = arr => arr.reduce((acc, cv) => acc * cv )
 
 //Two: You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed 'age' of 0. Return a new array with [youngest age, oldest age, difference between the youngest and oldest age]. 
 function familyAgeDif (ageArr){
-  let youngToOld = ageArr.sort()
+  let youngToOld = ageArr.sort((a, b)=> a-b)
   return youngToOld[youngToOld.length-1] - youngToOld[0]
 }
 
