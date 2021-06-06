@@ -1,3 +1,6 @@
+//Vowel remover
+let shortcut = (string)=> string.replace(/[aeiou]/g, '')
+
 //Find the Difference in Age between Oldest and Youngest Family Members
 function differenceInAges(ages){
   let youngToOld = ages.sort((a, b) => a-b)
