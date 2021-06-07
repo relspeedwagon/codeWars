@@ -1,3 +1,17 @@
+//Regex count lowercase letters
+function lowercaseCount(str){
+  let arr = str.split("")
+  let count = arr.filter(x => /[a-z]/g.test(x))
+  return count.length
+}
+
+      //--------------other solves:
+      function lowercaseCount(str){
+        return (str.match(/[a-z]/g) || []).length
+      }
+
+      const lowercaseCount = str => str.replace(/[^a-z]/g, '').length;
+
 //Vowel remover
 let shortcut = (string)=> string.replace(/[aeiou]/g, '')
 
