@@ -1,3 +1,11 @@
+//Regexp Basics - is it a digit?
+String.prototype.digit = function() {
+  return /^\d$/.test(this);
+};
+      String.prototype.digit = function() {
+        return /^[0-9]$/.test(this);
+      };
+
 //Regex count lowercase letters
 function lowercaseCount(str){
   let arr = str.split("")
